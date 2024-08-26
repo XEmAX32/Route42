@@ -17,12 +17,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en">
       <head>
         <title>Italian Dynamism</title>
         <meta name="description" content="Italy has always been full of creative builders, we need to put the spotlight on them for the next generations." />
       </head>
-      <body className={inter.className}>
+      <body className={inter.className + " dark"}>
         {children}
         <Analytics />
         <SpeedInsights />
