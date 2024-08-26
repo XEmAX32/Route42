@@ -61,35 +61,35 @@ const Form: React.FC = () => {
   }
 
   return (
-    <div className="flex flex-cols justify-start items-start max-w-xl w-full rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black">
+    <div className="flex flex-cols justify-start items-start max-w-xl w-full rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white bg-black">
       <form className="flex flex-col md:flex-row items-end space-x-2 w-full">
         <LabelInputContainer className="flex flex-col w-full md:w-2/5">
-          <Label htmlFor="firstname" className="text-black dark:text-white">Name</Label>
+          <Label htmlFor="firstname" className="text-black text-white">Name</Label>
           <Input 
             id="firstname"
             placeholder="your name"
             type="text"
             required
             onChange={(e) => setName(e.target.value)}
-            className="w-full bg-gray-50 dark:bg-zinc-800 dark:text-white text-black rounded-md px-4 py-2 shadow-input focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full bg-gray-50 bg-zinc-800 text-white text-black rounded-md px-4 py-2 shadow-input focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </LabelInputContainer>
         <LabelInputContainer className="flex flex-col w-full md:w-3/5 mt-2 md:mt-0">
-          <Label htmlFor="email" className="text-black dark:text-white">Email</Label>
+          <Label htmlFor="email" className="text-black text-white">Email</Label>
           <Input 
             id="email"
             placeholder="your email"
             type="email"
             required
             onChange={(e) => setEmail(e.target.value)}
-            className="w-full bg-gray-50 dark:bg-zinc-800 dark:text-white text-black rounded-md px-4 py-2 shadow-input focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full bg-gray-50 bg-zinc-800 text-white text-black rounded-md px-4 py-2 shadow-input focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </LabelInputContainer>
         {/* <button
-          className="relative group/btn flex items-center justify-center w-12 pr-2 pl-2 h-11 text-white bg-gray-800 dark:bg-zinc-900 rounded-md shadow-input hover:bg-gray-700 dark:hover:bg-zinc-800 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="relative group/btn flex items-center justify-center w-12 pr-2 pl-2 h-11 text-white bg-gray-800 bg-zinc-900 rounded-md shadow-input hover:bg-gray-700 hover:bg-zinc-800 focus:outline-none focus:ring-2 focus:ring-blue-500"
           type="submit"
         >
-          <span className="text-neutral-700 dark:text-neutral-300 text-sm">
+          <span className="text-neutral-700 text-neutral-300 text-sm">
             <IconArrowRight />
           </span>
           <BottomGradient />
