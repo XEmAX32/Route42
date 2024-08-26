@@ -252,7 +252,7 @@ const people = [
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col align-start">
+    <main className="flex min-h-screen flex-col align-start bg-black">
       <div className="relative">
         <Graphic />
         <div className="background-gradient"></div>
