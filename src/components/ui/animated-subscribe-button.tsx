@@ -29,7 +29,7 @@ export const AnimatedSubscribeButton: React.FC<
     <AnimatePresence mode="wait">
       {isSubscribed ? (
         <motion.button
-          className="relative flex w-[200px] items-center justify-center overflow-hidden rounded-md bg-white p-[8px] outline outline-1 outline-black"
+          className="mt-4 md:mt-0 relative flex w-full md:w-[200px] items-center justify-center overflow-hidden rounded-md bg-white p-[8px] outline outline-1 outline-black"
           onClick={() => setIsSubscribed(false)}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -47,7 +47,7 @@ export const AnimatedSubscribeButton: React.FC<
         </motion.button>
       ) : (
         <motion.button
-          className="relative flex w-[200px] cursor-pointer items-center justify-center rounded-md border-none p-[10px]"
+          className="mt-4 md:mt-0 relative flex w-full md:w-[200px] cursor-pointer items-center justify-center rounded-md border-none p-[10px]"
           style={{ backgroundColor: buttonColor, color: buttonTextColor }}
           onClick={() => {
             if (available) {

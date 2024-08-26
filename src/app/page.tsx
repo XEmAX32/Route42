@@ -289,7 +289,7 @@ export default function Home() {
         <p>Let&apos;s stay in contact, we&apos;re soon going to drop tools for you to build great things.</p>
         <Form />
       </div>
-      <p className="text-center mb-10 px-2">Made from Milan 🇮🇹 and San Francisco 🇺🇸 for creative builder&apos;s minds.</p>
+      <p className="text-center my-10 px-2">Made from Milan 🇮🇹 and San Francisco 🇺🇸 for creative builder&apos;s minds.</p>
     </main>
   );
 }
