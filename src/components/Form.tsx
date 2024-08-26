@@ -1,11 +1,16 @@
-"use client";
+"use client"
 import React from "react";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
 import {
-  IconSquareArrowRightFilled
+  IconArrowRight
 } from "@tabler/icons-react";
+import { EmailTemplate } from "@/emails/welcome";
+import { Resend } from "resend";
+
+// const resend = new Resend(process.env.RESEND_API_KEY);
+
 const LabelInputContainer = ({
   children,
   className,
@@ -30,29 +35,50 @@ const BottomGradient = () => {
 };
 
 const Form: React.FC = () => {
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log("Form submitted");
-  };
+
+    const name = e.target[0].value;
+    const email = e.target[1].value;
+  
+    fetch("http://localhost:3000/api/send", {
+      method: "POST",
+      body: JSON.stringify({
+        name,
+        email,
+      }),
+    });
+  }
 
   return (
-    <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black">
-      <form className="my-8 flex items-end space-x-2 items-" onSubmit={handleSubmit}>
-        <LabelInputContainer className="flex flex-col w-full">
-          <Label htmlFor="email" className="text-black dark:text-white">your email</Label>
+    <div className="flex flex-cols justify-start items-start max-w-md w-full rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black">
+      <form className="flex items-end space-x-2 w-full" onSubmit={sendEmail}>
+        <LabelInputContainer className="flex flex-col w-full w-2/5">
+          <Label htmlFor="firstname" className="text-black dark:text-white">Name</Label>
+          <Input 
+            id="firstname"
+            placeholder="your name"
+            type="text"
+            required
+            className="w-full bg-gray-50 dark:bg-zinc-800 dark:text-white text-black rounded-md px-4 py-2 shadow-input focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+        </LabelInputContainer>
+        <LabelInputContainer className="flex flex-col w-full w-3/5">
+          <Label htmlFor="email" className="text-black dark:text-white">Email</Label>
           <Input 
             id="email"
-            placeholder="Enter your email"
+            placeholder="your email"
             type="email"
+            required
             className="w-full bg-gray-50 dark:bg-zinc-800 dark:text-white text-black rounded-md px-4 py-2 shadow-input focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </LabelInputContainer>
         <button
-          className="relative group/btn flex items-center justify-center w-12 h-11 text-white bg-gray-800 dark:bg-zinc-900 rounded-md shadow-input hover:bg-gray-700 dark:hover:bg-zinc-800 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="relative group/btn flex items-center justify-center w-12 pr-2 pl-2 h-11 text-white bg-gray-800 dark:bg-zinc-900 rounded-md shadow-input hover:bg-gray-700 dark:hover:bg-zinc-800 focus:outline-none focus:ring-2 focus:ring-blue-500"
           type="submit"
         >
           <span className="text-neutral-700 dark:text-neutral-300 text-sm">
-            <IconSquareArrowRightFilled />
+            <IconArrowRight />
           </span>
           <BottomGradient />
         </button>

@@ -4,22 +4,26 @@ import { Cover } from "@/components/ui/cover";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { LinkPreview } from "@/components/ui/link-preview";
 import Form from "@/components/Form";
+import { loadEnvConfig } from '@next/env'
+
+const projectDir = process.cwd()
+loadEnvConfig(projectDir)
 
 const projects = [
   {
     title: "Opportunities",
     description: "Find your next step in a pool of more than 200 opportunities. Drops in October.",
-    link: "",
+    link: "#join",
   },
   {
     title: "Mentors",
     description: "Find the coolest people around, get to chat with them and one up your career. Drops in November.",
-    link: "",
+    link: "#join",
   },
   {
     title: "More",
-    description: "more stuff to come, keep in contact to stay updated.",
-    link: "",
+    description: "More stuff to come, keep in contact to stay updated.",
+    link: "#join",
   },
 ];
 
@@ -158,7 +162,7 @@ const people = [
     description: "Co-Founder of Kong",
     category: "tech",
     link: "https://en.wikipedia.org/wiki/Kong_Inc",
-    year: 1901,
+    year: 1988,
   },
   {
     name: "Marco Palladino",
@@ -168,46 +172,53 @@ const people = [
     year: 1901,
   },
   {
-    name: "Eugenio Bersanti, Felice Matteucci",
+    name: "Eugenio Bersanti",
     description: "Inventor of the internal combustion engine",
     category: "science",
-    link: "https://en.wikipedia.org/wiki/Enrico_Fermi",
-    year: 1901,
+    link: "https://it.wikipedia.org/wiki/Eugenio_Barsanti",
+    year: 1821,
+  },
+  {
+    name: "Felice Matteucci",
+    description: "Inventor of the internal combustion engine",
+    category: "science",
+    link: "https://it.wikipedia.org/wiki/Felice_Matteucci",
+    year: 1808,
   },
   {
     name: "Mario Draghi",
     description: "Inventor of Quantitative Easing method",
     category: "finance",
     link: "https://en.wikipedia.org/wiki/Mario_Draghi",
-    year: 1901,
+    year: 1947,
   },
   {
     name: "Franco Modigliani",
-    description: "Considered the invetor of the rational expectations hypothesis, Nobel Memorial Prize",
+    description: "Considered the inventor of the rational expectations hypothesis, Nobel Memorial Prize",
     category: "finance",
     link: "https://en.wikipedia.org/wiki/Franco_Modigliani",
-    year: 1947,
+    year: 1918,
   },
   {
     name: "Guglielmo Marconi",
     description: "Inventor of the radio, Nobel laurate",
     category: "science",
     link: "https://en.wikipedia.org/wiki/Guglielmo_Marconi",
-    year: 1901,
+    year: 1874,
   },
   {
     name: "Carlo Rubbia",
     description: "Discoverer of W and Z particles, Nobel laureate",
     category: "science",
     link: "https://en.wikipedia.org/wiki/Carlo_Rubbia",
-    year: 1901,
+    year: 1934,
   },
   {
     name: "Carlo Rovelli",
     description: "Theorist of the loop quantum gravity",
     category: "science",
     link: "https://en.wikipedia.org/wiki/Carlo_Rovelli",
-    year: 1901,
+    year: 1956,
   },
   {
     name: "Emilio Segrè",
@@ -221,14 +232,14 @@ const people = [
     description: "Father of the modern field of chaos theory",
     category: "science",
     link: "https://www.parisigiorgio.it",
-    year: 1901,
+    year: 1948,
   },
   {
     name: "Maria Montessori",
     description: "Inventor of the Montessori educational method.",
     category: "educator",
     link: "https://en.wikipedia.org/wiki/Maria_Montessori",
-    year: 1901,
+    year: 1870,
   },
   {
     name: "Francesco Rampazetto",
@@ -252,7 +263,7 @@ export default function Home() {
         </div>
       </div>
       <h3 className="mt-20 text-xl md:text-xl lg:text-2xl font-semibold max-w-7xl mx-auto text-center mt-6 relative z-20 py-6">
-        Talent isn&apos;t scarce in Italy, opportunity is. <br/>
+        Talent is everywhere, opportunity is not. <br/>
         We don&apos;t lack brilliance, we lack the spark of collective ambition. <br/>
         Our heritage isn&apos;t a weight, it&apos;s for launching moonshots. <br/>
         We&apos;re not chasing Silicon Valley, we&apos;re unleashing the Italian Renaissance 2.0. <br/>
@@ -268,12 +279,17 @@ export default function Home() {
         {people.filter((person) => person.category == "science").sort((el1, el2) => el2.year - el1.year).map((person, index) => <Talent key={index} name={person.name} description={person.description} url={person.link} year={person.year} />)}
         <h3 className="text-2xl font-medium mb-3 mt-4">In economics / finance</h3>
         {people.filter((person) => person.category == "finance").sort((el1, el2) => el2.year - el1.year).map((person, index) => <Talent key={index} name={person.name} description={person.description} url={person.link} year={person.year} />)}
-        <h3 className="text-2xl font-medium mb-3 mt-4">In science</h3>
+        <h3 className="text-2xl font-medium mb-3 mt-4">In education / information</h3>
         {people.filter((person) => person.category == "educator").sort((el1, el2) => el2.year - el1.year).map((person, index) => <Talent key={index} name={person.name} description={person.description} url={person.link} year={person.year} />)}
         <h3 className="text-2xl font-medium mb-3 mt-4">In art</h3>
         {people.filter((person) => person.category == "artist").sort((el1, el2) => el2.year - el1.year).map((person, index) => <Talent key={index} name={person.name} description={person.description} url={person.link} year={person.year} />)}
       </div>
-      <Form />
+      <div className="mt-10 flex flex-col justify-start pl-28 z-50" id="join">
+        <h1 className="text-3xl font-semibold mb-4">Updates are coming</h1>
+        <p>Let&apos;s stay in contact, we&apos;re soon going to drop tools for you to build great things.</p>
+        <Form />
+      </div>
+      <p className="text-center mb-10">Made from Milan 🇮🇹 and San Francisco 🇺🇸 for creative builder&apos;s minds.</p>
     </main>
   );
 }
