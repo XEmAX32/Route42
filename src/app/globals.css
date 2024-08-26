@@ -31,3 +31,13 @@ body {
     text-wrap: balance;
   }
 }
+
+.background-gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px; /* Adjust this height as needed */
+  background: linear-gradient(to bottom, transparent, #000); /* Adjust the color to match your page background */
+  pointer-events: none; /* Allows clicks to pass through */
+}
