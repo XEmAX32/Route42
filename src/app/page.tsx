@@ -23,7 +23,14 @@ const projects = [
   },
 ];
 
-const Talent = ({ name, description, url, year }) => {
+type TalentProp = {
+  name: string;
+  description: string;
+  url: string;
+  year: number;
+};
+
+const Talent = ({ name, description, url, year }: TalentProp) => {
   return (
     <div className="mb-3">
       <LinkPreview url={url}>
@@ -245,10 +252,10 @@ export default function Home() {
         </div>
       </div>
       <h3 className="mt-20 text-xl md:text-xl lg:text-2xl font-semibold max-w-7xl mx-auto text-center mt-6 relative z-20 py-6">
-        Talent isn't scarce in Italy, opportunity is. <br/>
-        We don't lack brilliance, we lack the spark of collective ambition. <br/>
-        Our heritage isn't a weight, it's for launching moonshots. <br/>
-        We're not chasing Silicon Valley, we're unleashing the Italian Renaissance 2.0. <br/>
+        Talent isn&apos;t scarce in Italy, opportunity is. <br/>
+        We don&apos;t lack brilliance, we lack the spark of collective ambition. <br/>
+        Our heritage isn&apos;t a weight, it&apos;s for launching moonshots. <br/>
+        We&apos;re not chasing Silicon Valley, we&apos;re unleashing the Italian Renaissance 2.0. <br/>
       </h3>
       <div className="max-w-5xl mx-auto px-8">
         <HoverEffect items={projects} />
