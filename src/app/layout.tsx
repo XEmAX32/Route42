@@ -18,6 +18,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <title>Italian Dynamism</title>
+        <meta name="description" content="Italy has always been full of creative builders, we need to put the spotlight on them for the next generations." />
+      </head>
       <body className={inter.className}>
         {children}
         <Analytics />
