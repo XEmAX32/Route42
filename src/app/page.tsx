@@ -262,7 +262,7 @@ export default function Home() {
           </h1>
         </div>
       </div>
-      <h3 className="mt-20 text-xl md:text-xl lg:text-2xl font-semibold max-w-7xl mx-auto text-center mt-6 relative z-20 py-6 px-6">
+      <h3 className="mt-20 text-xl md:text-xl lg:text-2xl font-semibold max-w-7xl mx-auto text-center mt-6 relative z-20 py-6 px-6 text-white">
         Talent is everywhere, opportunity is not. <br/>
         We don&apos;t lack brilliance, we lack the spark of collective ambition. <br/>
         Our heritage isn&apos;t a weight, it&apos;s for launching moonshots. <br/>
@@ -272,24 +272,24 @@ export default function Home() {
         <HoverEffect items={projects} />
       </div>
       <div className="flex flex-col justify-start px-10 md:px-28 z-50">
-        <h2 className="text-3xl font-semibold mb-4">Amazing italian people</h2>
-        <h3 className="text-2xl font-medium mb-3 mt-4">In tech</h3>
+        <h2 className="text-3xl font-semibold mb-4 text-white">Amazing italian people</h2>
+        <h3 className="text-2xl font-medium mb-3 mt-4 text-white">In tech</h3>
         {people.filter((person) => person.category == "tech").sort((el1, el2) => el2.year - el1.year).map((person, index) => <Talent key={index} name={person.name} description={person.description} url={person.link} year={person.year} />)}
-        <h3 className="text-2xl font-medium mb-3 mt-4">In science</h3>
+        <h3 className="text-2xl font-medium mb-3 mt-4 text-white">In science</h3>
         {people.filter((person) => person.category == "science").sort((el1, el2) => el2.year - el1.year).map((person, index) => <Talent key={index} name={person.name} description={person.description} url={person.link} year={person.year} />)}
-        <h3 className="text-2xl font-medium mb-3 mt-4">In economics / finance</h3>
+        <h3 className="text-2xl font-medium mb-3 mt-4 text-white">In economics / finance</h3>
         {people.filter((person) => person.category == "finance").sort((el1, el2) => el2.year - el1.year).map((person, index) => <Talent key={index} name={person.name} description={person.description} url={person.link} year={person.year} />)}
-        <h3 className="text-2xl font-medium mb-3 mt-4">In education / information</h3>
+        <h3 className="text-2xl font-medium mb-3 mt-4 text-white">In education / information</h3>
         {people.filter((person) => person.category == "educator").sort((el1, el2) => el2.year - el1.year).map((person, index) => <Talent key={index} name={person.name} description={person.description} url={person.link} year={person.year} />)}
-        <h3 className="text-2xl font-medium mb-3 mt-4">In art</h3>
+        <h3 className="text-2xl font-medium mb-3 mt-4  text-white">In art</h3>
         {people.filter((person) => person.category == "artist").sort((el1, el2) => el2.year - el1.year).map((person, index) => <Talent key={index} name={person.name} description={person.description} url={person.link} year={person.year} />)}
       </div>
       <div className="mt-10 flex flex-col justify-start px-10 md:px-28 z-50" id="join">
-        <h1 className="text-3xl font-semibold mb-4">Updates are coming</h1>
-        <p>Let&apos;s stay in contact, we&apos;re soon going to drop tools for you to build great things.</p>
+        <h1 className="text-3xl font-semibold mb-4 text-white">Updates are coming</h1>
+        <p className="text-white">Let&apos;s stay in contact, we&apos;re soon going to drop tools for you to build great things.</p>
         <Form />
       </div>
-      <p className="text-center my-10 px-2">Made from Milan 🇮🇹 and San Francisco 🇺🇸 for creative builder&apos;s minds.</p>
+      <p className="text-center my-10 px-2 text-white">Made from Milan 🇮🇹 and San Francisco 🇺🇸 for creative builder&apos;s minds.</p>
     </main>
   );
 }
