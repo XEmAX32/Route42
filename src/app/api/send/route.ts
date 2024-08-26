@@ -1,19 +1,27 @@
 import WelcomeTemplate from '../../../emails/WelcomeTemplate';
 import { Resend } from 'resend';
-import type { NextApiRequest, NextApiResponse } from 'next'
+import { NextRequest, NextResponse } from 'next/server'
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-export async function POST(req: NextApiRequest, res: NextApiResponse) {
-  try {
-    const body = await req.json();
+type body = {
+  email: string | null;
+  name: string | null;
+}
 
-    resend.contacts.create({
-      email: body.email,
-      firstName: body.name,
+export async function POST(
+  req: NextRequest,
+  res: NextResponse
+) {
+  try {
+    const { email, name }= await req.json();
+
+    await resend.contacts.create({
+      email: email,
+      firstName: name,
       unsubscribed: false,
       audienceId: '5d7a47c3-19dc-460f-aade-a4af044cbb96',
-    }).then((err) => console.log(err));
+    })
 
     // const { data, error } = await resend.emails.send({
     //   from: 'Emanuele <join@italiandynamism.com>',
@@ -27,8 +35,9 @@ export async function POST(req: NextApiRequest, res: NextApiResponse) {
     //   return Response.json({ error }, { status: 500 });
     // }
 
-    return Response.json({status: "done"});
+    NextResponse.json({ status: 'done' });
   } catch (error) {
-    return Response.json({ error }, { status: 500 });
+    console.error('Error creating contact:', error);
+    NextResponse.json({ error: 'Internal Server Error' });
   }
 }

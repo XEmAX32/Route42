@@ -40,11 +40,11 @@ const Form: React.FC = () => {
   const [email, setEmail] = useState<string>("");
 
   const validateEmail = () => {
-    return String(email)
+    return Boolean(String(email)
       .toLowerCase()
       .match(
         /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-      );
+      ));
   };
 
   const sendEmail = () => {  
@@ -98,7 +98,7 @@ const Form: React.FC = () => {
           buttonColor="rgb(39, 39, 42)"
           buttonTextColor="#ffffff"
           subscribeStatus={false}
-          available={name.length > 0 && email.length > 0 && validateEmail(email)}
+          available={name.length > 0 && email.length > 0 && validateEmail()}
           onClick={sendEmail}
           initialText={
             <span className="group inline-flex items-center">
