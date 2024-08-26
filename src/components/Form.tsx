@@ -1,13 +1,14 @@
 "use client"
-import React from "react";
+import React, { useState } from "react";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
 import {
-  IconArrowRight
+  IconArrowRight,
+  IconChevronRight,
+  IconCheck,
 } from "@tabler/icons-react";
-import { EmailTemplate } from "@/emails/welcome";
-import { Resend } from "resend";
+import { AnimatedSubscribeButton } from "@/components/ui/animated-subscribe-button";
 
 // const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -35,12 +36,18 @@ const BottomGradient = () => {
 };
 
 const Form: React.FC = () => {
-  const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  const [name, setName] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
 
-    const name = e.target[0].value;
-    const email = e.target[1].value;
-  
+  const validateEmail = () => {
+    return String(email)
+      .toLowerCase()
+      .match(
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+      );
+  };
+
+  const sendEmail = () => {  
     fetch("http://localhost:3000/api/send", {
       method: "POST",
       body: JSON.stringify({
@@ -48,11 +55,14 @@ const Form: React.FC = () => {
         email,
       }),
     });
+
+    setName("");
+    setEmail("");
   }
 
   return (
-    <div className="flex flex-cols justify-start items-start max-w-md w-full rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black">
-      <form className="flex items-end space-x-2 w-full" onSubmit={sendEmail}>
+    <div className="flex flex-cols justify-start items-start max-w-xl w-full rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black">
+      <form className="flex items-end space-x-2 w-full">
         <LabelInputContainer className="flex flex-col w-full w-2/5">
           <Label htmlFor="firstname" className="text-black dark:text-white">Name</Label>
           <Input 
@@ -60,6 +70,7 @@ const Form: React.FC = () => {
             placeholder="your name"
             type="text"
             required
+            onChange={(e) => setName(e.target.value)}
             className="w-full bg-gray-50 dark:bg-zinc-800 dark:text-white text-black rounded-md px-4 py-2 shadow-input focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </LabelInputContainer>
@@ -70,10 +81,11 @@ const Form: React.FC = () => {
             placeholder="your email"
             type="email"
             required
+            onChange={(e) => setEmail(e.target.value)}
             className="w-full bg-gray-50 dark:bg-zinc-800 dark:text-white text-black rounded-md px-4 py-2 shadow-input focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </LabelInputContainer>
-        <button
+        {/* <button
           className="relative group/btn flex items-center justify-center w-12 pr-2 pl-2 h-11 text-white bg-gray-800 dark:bg-zinc-900 rounded-md shadow-input hover:bg-gray-700 dark:hover:bg-zinc-800 focus:outline-none focus:ring-2 focus:ring-blue-500"
           type="submit"
         >
@@ -81,7 +93,26 @@ const Form: React.FC = () => {
             <IconArrowRight />
           </span>
           <BottomGradient />
-        </button>
+        </button> */}
+        <AnimatedSubscribeButton
+          buttonColor="rgb(39, 39, 42)"
+          buttonTextColor="#ffffff"
+          subscribeStatus={false}
+          available={name.length > 0 && email.length > 0 && validateEmail(email)}
+          onClick={sendEmail}
+          initialText={
+            <span className="group inline-flex items-center">
+              Join{" "}
+              <IconChevronRight className="ml-1 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+            </span>
+          }
+          changeText={
+            <span className="group inline-flex items-center">
+              <IconCheck className="mr-2 h-4 w-4" />
+              Joined{" "}
+            </span>
+          }
+        />      
       </form>
     </div>
   );
