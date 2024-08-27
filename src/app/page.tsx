@@ -61,7 +61,7 @@ const people = [
   },
   {
     name: "Salvatore Sanfilippo",
-    description: "Inventor of the Redis",
+    description: "Inventor of Redis",
     category: "tech",
     link: "http://invece.org",
     year: 1977,
@@ -70,7 +70,7 @@ const people = [
     name: "Alessandro Volta",
     description: "Inventor of the battery",
     category: "tech",
-    link: "http://invece.org",
+    link: "https://en.wikipedia.org/wiki/Alessandro_Volta",
     year: 1977,
   },
   {
@@ -126,35 +126,35 @@ const people = [
     name: "Massimo Banzi",
     description: "Creator of Arduino",
     category: "science",
-    link: "https://en.wikipedia.org/wiki/Enrico_Fermi",
-    year: 1901,
+    link: "https://massimobanzi.com",
+    year: 1968,
   },
   {
     name: "Antonio Meucci",
     description: "Inventor of the telephone",
     category: "science",
-    link: "https://en.wikipedia.org/wiki/Enrico_Fermi",
-    year: 1901,
+    link: "https://en.wikipedia.org/wiki/Antonio_Meucci",
+    year: 1808,
   },
   {
     name: "Antonio Pacinotti",
     description: "Inventor of the dynamo and the AC motor",
     category: "science",
-    link: "https://en.wikipedia.org/wiki/Enrico_Fermi",
+    link: "https://en.wikipedia.org/wiki/Antonio_Pacinotti",
     year: 1841,
   },
   {
     name: "Evangelista Torricelli",
     description: "Inventor of the barometer",
     category: "science",
-    link: "https://en.wikipedia.org/wiki/Enrico_Fermi",
-    year: 1901,
+    link: "https://it.wikipedia.org/wiki/Evangelista_Torricelli",
+    year: 1608,
   },
   {
     name: "Giulio Natta",
     description: "Inventor of polypropilene (plastic) production, Nobel laureate",
     category: "science",
-    link: "https://en.wikipedia.org/wiki/Enrico_Fermi",
+    link: "https://en.wikipedia.org/wiki/Giulio_Natta",
     year: 1903,
   },
   {
@@ -169,7 +169,7 @@ const people = [
     description: "Co-Founder of Kong",
     category: "tech",
     link: "https://en.wikipedia.org/wiki/Kong_Inc",
-    year: 1901,
+    year: 1988,
   },
   {
     name: "Eugenio Bersanti",
@@ -246,7 +246,7 @@ const people = [
     description: "Inventor of the TypeWriter",
     category: "educator",
     link: "https://en.wikipedia.org/wiki/Typewriter",
-    year: 1901,
+    year: 1510,
   }
 ]
 
