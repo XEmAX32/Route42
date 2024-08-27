@@ -61,9 +61,9 @@ const Form: React.FC = () => {
   }
 
   return (
-    <div className="flex flex-cols justify-start items-start max-w-xl w-full rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black">
-      <form className="flex flex-col md:flex-row items-end space-x-2 w-full">
-        <LabelInputContainer className="flex flex-col w-full md:w-2/5">
+    <div className="flex flex-cols justify-start items-start max-w-xl w-full rounded-none md:rounded-2xl md:p-8 shadow-input bg-white dark:bg-black">
+      <form className="flex flex-col md:flex-row items-end space-x-2 w-full max-w-xl">
+        <LabelInputContainer className="flex flex-col w-full md:w-2/5 max-w-xl mt-4">
           <Label htmlFor="firstname" className="text-black dark:text-white">Name</Label>
           <Input 
             id="firstname"
@@ -74,7 +74,7 @@ const Form: React.FC = () => {
             className="w-full bg-gray-50 dark:bg-zinc-800 dark:text-white text-black rounded-md px-4 py-2 shadow-input focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </LabelInputContainer>
-        <LabelInputContainer className="flex flex-col w-full md:w-3/5 mt-2 md:mt-0">
+        <LabelInputContainer className="flex flex-col w-full md:w-3/5 mt-2 md:mt-0 max-w-xl">
           <Label htmlFor="email" className="text-black dark:text-white">Email</Label>
           <Input 
             id="email"
