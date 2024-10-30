@@ -35,7 +35,7 @@ export default function Crepuscolo() {
         <p className="text-sm md:text-base">during our workdays we are driven by rationality, planning and strategy; let the dusk be a moment of experimentation, try that thing your gut is telling you could incredibly improve your business but doesn&apos;t fit in your current planning, try a new technology or try out that idea that&apos;s living rent-free in the back of your mind.</p><br/>
         <p className="text-sm md:text-base">crepuscolo è organizzato da italian dynamism e moonstone vc.</p>
       </div>
-      <p className="text-center my-10 px-2 text-white text-sm md:text-base">Made from Milan 🇮🇹 and San Francisco 🇺🇸 for creative builder&apos;;s minds.</p>
+      <p className="text-center my-10 px-2 text-white text-sm md:text-base">Made from Milan 🇮🇹 and San Francisco 🇺🇸 for creative builder&apos;s minds.</p>
       <Script id="luma-checkout" src="https://embed.lu.ma/checkout-button.js"></Script>
     </main>
   );
