@@ -76,7 +76,7 @@ const people = [
     description: "Inventor of the battery",
     category: "tech",
     link: "https://en.wikipedia.org/wiki/Alessandro_Volta",
-    year: 1977,
+    year: 1745,
   },
   {
     name: "Pierluigi Zappacosta",
