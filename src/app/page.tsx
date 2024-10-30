@@ -278,7 +278,7 @@ export default function Home() {
       </div>
       <div className="flex flex-col justify-start px-10 md:px-28 z-50">
         <h2 className="text-3xl font-semibold mb-4 text-white">Amazing italian people in past and present times</h2>
-        <p>Italy has plenty of astonishingly talented people, but they&apos;re usually not known enough, even from their compatriots. By knowning that in the ranks of our connationals many were/are great creative minds we can gather the confidence to make new stuff.</p>
+        <p>Italy has plenty of astonishingly talented people, but they&apos;re usually not known enough.</p>
         <h3 className="text-2xl font-medium mb-3 mt-4 text-white">In tech</h3>
         {people.filter((person) => person.category == "tech").sort((el1, el2) => el2.year - el1.year).map((person, index) => <Talent key={index} name={person.name} description={person.description} url={person.link} year={person.year} />)}
         <h3 className="text-2xl font-medium mb-3 mt-4 text-white">In science</h3>
