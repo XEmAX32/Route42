@@ -12,7 +12,7 @@ loadEnvConfig(projectDir)
 const projects = [
   {
     title: "Crepuscolo",
-    description: "Afterwork meeting once a week to experiment.",
+    description: "Afterwork meeting once a week to experiment on new things.",
     link: "/crepuscolo",
   },
   {
