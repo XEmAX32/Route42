@@ -31,11 +31,11 @@ export default function Crepuscolo() {
         </div>
         <h2 className="text-3xl font-semibold mb-4 text-white">cosa aspettarti</h2>
         <p className="text-sm md:text-base">il crepuscolo segna la fine della giornata,</p><br/>
-        <p className="text-sm md:text-base">durante la giornata rischiamo di farci guidare troppo dalla pianificazione, fa che il crepuscolo sia un momento di sperimentazione, per provare quelle cose che l'intuizione ti dice possano avere potenziale ma la strategia ti dice che non è il momento.</p><br/>
-        <p className="text-sm md:text-base">during our workdays we are driven by rationality, planning and strategy; let the dusk be a moment of experimentation, try that thing your gut is telling you could incredibly improve your business but doesn't fit in your current planning, try a new technology or try out that idea that's living rent-free in the back of your mind.</p><br/>
+        <p className="text-sm md:text-base">durante la giornata rischiamo di farci guidare troppo dalla pianificazione, fa che il crepuscolo sia un momento di sperimentazione, per provare quelle cose che l&apos;intuizione ti dice possano avere potenziale ma la strategia ti dice che non è il momento.</p><br/>
+        <p className="text-sm md:text-base">during our workdays we are driven by rationality, planning and strategy; let the dusk be a moment of experimentation, try that thing your gut is telling you could incredibly improve your business but doesn&apos;t fit in your current planning, try a new technology or try out that idea that&apos;s living rent-free in the back of your mind.</p><br/>
         <p className="text-sm md:text-base">crepuscolo è organizzato da italian dynamism e moonstone vc.</p>
       </div>
-      <p className="text-center my-10 px-2 text-white text-sm md:text-base">Made from Milan 🇮🇹 and San Francisco 🇺🇸 for creative builder&apos;s minds.</p>
+      <p className="text-center my-10 px-2 text-white text-sm md:text-base">Made from Milan 🇮🇹 and San Francisco 🇺🇸 for creative builder&apos;;s minds.</p>
       <script id="luma-checkout" src="https://embed.lu.ma/checkout-button.js"></script>
     </main>
   );
