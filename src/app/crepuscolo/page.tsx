@@ -1,5 +1,5 @@
 import Dusk from "../../components/Dusk";
-import Image from "next/image";
+import Script from 'next/script'
 
 export default function Crepuscolo() {
   return (
@@ -36,7 +36,7 @@ export default function Crepuscolo() {
         <p className="text-sm md:text-base">crepuscolo è organizzato da italian dynamism e moonstone vc.</p>
       </div>
       <p className="text-center my-10 px-2 text-white text-sm md:text-base">Made from Milan 🇮🇹 and San Francisco 🇺🇸 for creative builder&apos;;s minds.</p>
-      <script id="luma-checkout" src="https://embed.lu.ma/checkout-button.js"></script>
+      <Script id="luma-checkout" src="https://embed.lu.ma/checkout-button.js"></Script>
     </main>
   );
 }
