@@ -11,7 +11,7 @@ export default function Crepuscolo() {
           <h1 className="text-4xl md:text-4xl lg:text-6xl font-semibold max-w-7xl mx-auto text-center mt-6 relative z-20 py-6 bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-neutral-700 to-neutral-700 dark:from-neutral-800 dark:via-white dark:to-white">
             crepuscolo
           </h1>
-          <p className="text-center text-2lg md:text-2lg lg:text-lg w-100 md:w-2/5">ci vediamo al crepuscolo per sperimentare e creare su tutto quello per cui non abbiamo tempo durante il giorno.</p>
+          <p className="text-center text-2lg md:text-2lg lg:text-lg w-100 md:w-2/5 px-5 md:px-0">ci vediamo al crepuscolo per sperimentare e creare su tutto quello per cui non abbiamo tempo durante il giorno.</p>
         </div>
       </div>
       <div className="flex flex-col justify-center px-5 md:px-10 mt-10">
