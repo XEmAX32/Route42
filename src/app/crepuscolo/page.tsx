@@ -30,9 +30,9 @@ export default function Crepuscolo() {
           </a>
         </div>
         <h2 className="text-3xl font-semibold mb-4 text-white">cosa aspettarti</h2>
-        <p className="text-sm md:text-base">durante la giornata rischiamo di farci guidare troppo dalla pianificazione, fa che il crepuscolo sia un momento di sperimentazione, per provare quelle cose che l&apos;intuizione ti dice possano avere potenziale ma che la pianificazione ti obbliga a rimandare.</p><br/>
-        <p className="text-sm md:text-base">inizia la sessione dichiarando un obiettivo al gruppo, tre ore di creatività e alla fine un momento di demo.</p><br/>
-        <p className="text-sm md:text-base">crepuscolo è organizzato da italian dynamism e moonstone vc.</p>
+        <p className="text-sm md:text-base text-white">durante la giornata rischiamo di farci guidare troppo dalla pianificazione, fa che il crepuscolo sia un momento di sperimentazione, per provare quelle cose che l&apos;intuizione ti dice possano avere potenziale ma che la pianificazione ti obbliga a rimandare.</p><br/>
+        <p className="text-sm md:text-base text-white">inizia la sessione dichiarando un obiettivo al gruppo, tre ore di creatività e alla fine un momento di demo.</p><br/>
+        <p className="text-sm md:text-base text-white">crepuscolo è organizzato da italian dynamism e moonstone vc.</p>
       </div>
       <p className="text-center my-10 px-2 text-white text-sm md:text-base">Made from Milan 🇮🇹 and San Francisco 🇺🇸 for creative builder&apos;s minds.</p>
       <Script id="luma-checkout" src="https://embed.lu.ma/checkout-button.js"></Script>
