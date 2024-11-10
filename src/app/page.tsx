@@ -11,18 +11,18 @@ loadEnvConfig(projectDir)
 
 const projects = [
   {
-    title: "Crepuscolo",
-    description: "Afterwork meeting once a week to experiment on new things.",
+    title: "crepuscolo",
+    description: "popup hackerspace in the city centre of milan.",
     link: "/crepuscolo",
   },
   {
-    title: "Opportunities",
-    description: "Find your next step in a pool of more than 200 opportunities. Drops in November.",
+    title: "opportunities",
+    description: "find your next step in a pool of more than 200 opportunities. Drops in November.",
     link: "#join",
   },
   {
-    title: "Mentors",
-    description: "Find the coolest people around, get to chat with them and one up your career. Drops in December.",
+    title: "mentors",
+    description: "find the coolest people around, get to chat with them and one up your career. Drops in December.",
     link: "#join",
   },
   // {
