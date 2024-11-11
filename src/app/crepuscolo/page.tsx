@@ -12,18 +12,18 @@ export default function Crepuscolo() {
           <h1 className="text-4xl md:text-4xl lg:text-6xl font-semibold max-w-7xl mx-auto text-center mt-6 relative z-20 py-6 bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-neutral-700 to-neutral-700 dark:from-neutral-800 dark:via-white dark:to-white">
             crepuscolo
           </h1>
-          <p className="text-center text-2lg md:text-2lg lg:text-lg w-100 md:w-2/5 px-5 md:px-0">ci vediamo al crepuscolo per sperimentare e creare su tutto quello per cui non abbiamo tempo durante il giorno.</p>
+          <p className="text-center text-2lg md:text-2lg lg:text-lg w-100 md:w-2/5 px-5 md:px-0 text-white">ci vediamo al crepuscolo per sperimentare e creare su tutto quello per cui non abbiamo tempo durante il giorno.</p>
         </div>
       </div>
       <div className="flex flex-col justify-center px-5 md:px-10 mt-10">
         <div className="flex justify-between items-center border border-transparent dark:border-white/[0.2] rounded-2xl p-5 overflow-hidden mb-20">
           <div className="mr-1 md:mr-4">
             <h2 className="text-2lg md:text-2lg lg:text-lg font-semibold text-white ">ci vediamo al crepuscolo</h2>
-            <h3 className="text-gray-400">prossimo incontro mercoledi venti novembre</h3>
+            <h3 className="text-gray-400 text-white">prossimo incontro mercoledi venti novembre</h3>
           </div>
           <a
             href="https://lu.ma/event/evt-WsSWFzAIhHlDZ2Q"
-            className="luma-checkout--button px-4 py-2 text-white bg-blue-600 rounded-full"
+            className="luma-checkout--button px-4 py-2 text-white bg-blue-600 rounded-full text-white"
             data-luma-action="checkout"
             data-luma-event-id="evt-WsSWFzAIhHlDZ2Q"
           >
@@ -43,14 +43,14 @@ export default function Crepuscolo() {
           ​se stai imparando una cosa nuova puoi venire a farlo.
         </p>
         <h2 className="text-3xl font-semibold mb-4 text-white">cosa aspettarti</h2>
-        <ol className="list-decimal list-inside">
+        <ol className="list-decimal list-inside text-white">
           <li>condividi il tuo obiettivo per la serata</li>
           <li>prima sessione di lavoro da un&apos;ora e mezza</li>
           <li>pausa di trenta minuti</li>
           <li>seconda sessione di lavoro di un&apos;ora e mezza</li>
           <li>demo su base volontaria</li>
         </ol>
-        <p className="text-sm md:text-base text-white"></p><br/>
+        {/* <p className="text-sm md:text-base text-white"></p><br/> */}
         <p className="text-sm md:text-base text-white">crepuscolo è organizzato da italian dynamism e moonstone vc.</p>
       </div>
       <p className="text-center my-10 px-2 text-white text-sm md:text-base">Made from Milan 🇮🇹 and San Francisco 🇺🇸 for creative builder&apos;s minds.</p>
