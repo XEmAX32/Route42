@@ -200,7 +200,7 @@ const people = [
   {
     name: "Nicolò Govoni",
     description: "Opening free IB schools across the world.",
-    category: "education",
+    category: "educator",
     link: "https://www.nicologovoni.com/chi-sono",
     year: 1993,
   },
