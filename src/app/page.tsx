@@ -198,6 +198,13 @@ const people = [
     year: 1947,
   },
   {
+    name: "Nicolò Govoni",
+    description: "Opening free IB schools across the world.",
+    category: "education",
+    link: "https://www.nicologovoni.com/chi-sono",
+    year: 1993,
+  },
+  {
     name: "Franco Modigliani",
     description: "Considered the inventor of the rational expectations hypothesis, Nobel Memorial Prize",
     category: "finance",
