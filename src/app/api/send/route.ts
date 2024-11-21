@@ -2,7 +2,7 @@ import WelcomeTemplate from '../../../emails/WelcomeTemplate';
 import { Resend } from 'resend';
 import { NextRequest, NextResponse } from 'next/server'
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend("re_LHiXFDNX_NdYvVDxnyKyNLALkuk2sNbbL");
 
 type body = {
   email: string | null;
