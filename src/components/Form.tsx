@@ -56,7 +56,7 @@ const Form: React.FC = () => {
     //   }),
     // });
     
-    const form = document.getElementById('email_form');
+    const form = document.getElementById('email_form') as HTMLFormElement;
     if (form)
       form.submit();
 
