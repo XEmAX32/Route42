@@ -48,7 +48,7 @@ const Form: React.FC = () => {
   };
 
   const sendEmail = () => {  
-    fetch("http://localhost:3000/api/send", {
+    fetch("https://italiandynamism.com/api/send", {
       method: "POST",
       body: JSON.stringify({
         name,
