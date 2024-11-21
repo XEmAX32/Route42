@@ -48,17 +48,17 @@ const Form: React.FC = () => {
   };
 
   const sendEmail = () => {  
-    // fetch("https://italiandynamism.com/api/send", {
-    //   method: "POST",
-    //   body: JSON.stringify({
-    //     name,
-    //     email,
-    //   }),
-    // });
+    fetch("https://italiandynamism.com/api/send", {
+      method: "POST",
+      body: JSON.stringify({
+        name,
+        email,
+      }),
+    });
     
-    const form = document.getElementById('email_form') as HTMLFormElement;
-    if (form)
-      form.submit();
+    // const form = document.getElementById('email_form') as HTMLFormElement;
+    // if (form)
+    //   form.submit();
 
     setName("");
     setEmail("");
@@ -67,9 +67,9 @@ const Form: React.FC = () => {
   return (
     <div className="flex flex-cols justify-start items-start max-w-xl w-full rounded-none md:rounded-2xl md:p-8 shadow-input bg-white dark:bg-black">
       <form 
-        id="email_form"
-        action="https://formspree.io/f/xzzbvjqq"
-        method="POST"
+        // id="email_form"
+        // action="https://formspree.io/f/xzzbvjqq"
+        // method="POST"
         className="flex flex-col md:flex-row items-end space-x-2 w-full max-w-xl"
       >
         <LabelInputContainer className="flex flex-col w-full md:w-2/5 max-w-xl mt-4">
