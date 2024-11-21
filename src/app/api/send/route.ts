@@ -28,7 +28,7 @@ export async function POST(
     //   to: [body.email],
     //   subject: 'Welcome to Italian Dynamism',
     //   react: WelcomeTemplate({ firstName: body.name }),
-    // });
+    // });  
 
     // if (error) {
     //   console.log(error)
