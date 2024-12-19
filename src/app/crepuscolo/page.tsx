@@ -19,7 +19,7 @@ export default function Crepuscolo() {
         <div className="flex justify-between items-center border border-transparent dark:border-white/[0.2] rounded-2xl p-5 overflow-hidden mb-20">
           <div className="mr-1 md:mr-4">
             <h2 className="text-2lg md:text-2lg lg:text-lg font-semibold text-white ">ci vediamo al crepuscolo</h2>
-            <h3 className="text-gray-400 text-white">prossimo incontro mercoledi otto gennaio</h3>
+            <h3 className="text-gray-400 text-white">prossimo incontro mercoledì otto gennaio</h3>
           </div>
           <a
             href="https://lu.ma/event/evt-yXfKqDUpLmw8ggX"
