@@ -31,9 +31,9 @@ export default function Crepuscolo() {
           </a>
         </div>
         <div className="flex flex-row justify-around mb-10">
-          <div className="rotate-3 bg-cover rounded-md" style={{ width: 240, height: 150, backgroundImage: "url('/crepuscolo_1.png')" }}  />
-          <div className="-rotate-6 bg-cover rounded-md" style={{ width: 240, height: 150, backgroundImage: "url('/crepuscolo_2.png')" }}  />
-          <div className="rotate-3 bg-cover rounded-md" style={{ width: 240, height: 150, backgroundImage: "url('/crepuscolo_3.png')" }}  />
+          <div className="rotate-3 bg-cover bg-center rounded-md" style={{ width: 240, height: 150, backgroundImage: "url('/crepuscolo_1.jpg')" }}  />
+          <div className="-rotate-6 bg-cover bg-center rounded-md" style={{ width: 240, height: 150, backgroundImage: "url('/crepuscolo_2.jpg')" }}  />
+          <div className="rotate-3 bg-cover bg-center rounded-md" style={{ width: 240, height: 150, backgroundImage: "url('/crepuscolo_3.jpg')" }}  />
         </div>
         <p className="text-sm md:text-base text-white">crepuscolo è un <a className="underline" target="_blank" href="https://www.wellnesswisdom.xyz/p/what-is-a-forth-place">quarto spazio</a> per tecnici e creativi. qui potrai lavorare ai tuoi progetti e condividere idee con altri creativi.<br/> le sessioni sono intime, sei persone per volta, per mantenere un buon livello di concentrazione e condivisione.</p><br/>
         <p className="text-sm md:text-base text-white mb-8">
