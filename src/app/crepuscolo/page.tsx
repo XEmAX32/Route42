@@ -19,13 +19,13 @@ export default function Crepuscolo() {
         <div className="flex justify-between items-center border border-transparent dark:border-white/[0.2] rounded-2xl p-5 overflow-hidden mb-20">
           <div className="mr-1 md:mr-4">
             <h2 className="text-2lg md:text-2lg lg:text-lg font-semibold text-white ">ci vediamo al crepuscolo</h2>
-            <h3 className="text-gray-400 text-white">prossimo incontro mercoledi ventisette novembre</h3>
+            <h3 className="text-gray-400 text-white">prossimo incontro mercoledi otto gennaio</h3>
           </div>
           <a
-            href="https://lu.ma/event/evt-WsSWFzAIhHlDZ2Q"
+            href="https://lu.ma/event/evt-yXfKqDUpLmw8ggX"
             className="luma-checkout--button px-4 py-2 text-white bg-blue-600 rounded-full text-white"
             data-luma-action="checkout"
-            data-luma-event-id="evt-WsSWFzAIhHlDZ2Q"
+            data-luma-event-id="evt-yXfKqDUpLmw8ggX"
           >
             registrati
           </a>
@@ -33,7 +33,7 @@ export default function Crepuscolo() {
         <div className="flex flex-row justify-around mb-10">
           <div className="rotate-3 bg-cover rounded-md" style={{ width: 240, height: 150, backgroundImage: "url('/crepuscolo_1.png')" }}  />
           <div className="-rotate-6 bg-cover rounded-md" style={{ width: 240, height: 150, backgroundImage: "url('/crepuscolo_2.png')" }}  />
-          {/* <div className="rotate-3 bg-cover rounded-md" style={{ width: 240, height: 150, backgroundImage: "url('/crepuscolo_2.png')" }}  /> */}
+          <div className="rotate-3 bg-cover rounded-md" style={{ width: 240, height: 150, backgroundImage: "url('/crepuscolo_3.png')" }}  />
         </div>
         <p className="text-sm md:text-base text-white">crepuscolo è un <a className="underline" target="_blank" href="https://www.wellnesswisdom.xyz/p/what-is-a-forth-place">quarto spazio</a> per tecnici e creativi. qui potrai lavorare ai tuoi progetti e condividere idee con altri creativi.<br/> le sessioni sono intime, sei persone per volta, per mantenere un buon livello di concentrazione e condivisione.</p><br/>
         <p className="text-sm md:text-base text-white mb-8">
