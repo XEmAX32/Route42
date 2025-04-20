@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/ugcOS-efi.iso",
+      "destination": "https://www.dropbox.com/s/3f8yefjf28f8t0mxeg1lc/ugcOS-efi.iso?dl=1"
+    }
+  ]
+}
